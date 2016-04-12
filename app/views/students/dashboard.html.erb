@@ -1,0 +1,9 @@
+<div class="dashboard">
+  <div class="jumbotron">
+    <h2><strong>Hola <%= current_student.nombre %>!</strong></h2>
+    <p>Bienvenido(a) a la Aplicaci&oacute;n Web Gestion del Curso</p>
+    <br/>
+    <%= link_to 'Ver Mi Perfil', student_profile_path, class: 'btn btn-lg btn-primary' %>
+    <%= link_to 'Calificaciones', student_subject_path(current_student), class: 'btn btn-lg btn-default' %>
+  </div>
+</div>
